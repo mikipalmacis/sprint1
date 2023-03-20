@@ -89,6 +89,7 @@
     {
         border-left: 0px;
         flex: 100;
+        border-top: 20px solid #FEFF03;
     }
     .flexContainerSec > div {
         flex: 320px;
