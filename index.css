@@ -1,0 +1,135 @@
+/* HEADER */
+.contHeader{
+    border: 20px #000 solid
+}
+.flexContainerNav
+{
+    display: flex;
+    flex-direction:row;
+    background-color: #2D4059;
+    padding: 10px;
+    border-bottom: 5px solid #000;
+}
+.flexContainerNav > div{
+    background-color: #EA5455;
+    margin: 10px;
+    flex: auto;
+}
+.flexContainerNav > div.grande{
+    flex-grow: 3;
+}
+.flexContainerNavInf{
+    display: flex;
+    flex-direction:row;
+    background-color: #F07B3F;
+    padding: 10px;
+    border-top: 5px solid #000;
+}
+.flexContainerNavInf > div{
+    background-color: #FED460;
+    margin: 10px;
+    flex: auto;
+}
+
+/* SECTION */
+.contSection{
+    border: 20px #000 solid;
+    margin-top:20px;
+    display: flex;
+}
+
+.flexContainerSec
+{
+    display: flex;
+    flex-direction:row;
+    background-color: #4E4E6A;
+    padding: 10px;
+    flex-wrap: wrap;
+    /*width: 66%;*/
+    flex: 67; /* 67 */
+}
+.flexContainerSec > div {
+    background-color: #1F6CB0;
+    flex: 230px;
+    margin: 10px;
+}
+.flexContainerSec > div.grande{
+
+    background-color: #70A3C4;
+}
+.flexContainerSec2
+{
+    border-left: 20px #000 solid;
+    display: flex;
+    flex: 33; /* 33*/
+    flex-direction:column;
+    background-color: #F73F52;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+.flexContainerSec2 > div{
+    background-color: #FEEA85;
+    margin: 10px;
+}
+
+/* FOOTER */
+.flexContainerFo{
+    border: 20px #000 solid;
+    margin-top:20px;
+    display: flex;
+}
+.flexContainerFo > div {
+    background-color: #E6AF2E;
+    flex: auto;
+}
+
+@media (max-width: 1024px) { /* ---- TABLET ----- */
+    /* SECTION */
+    .flexContainerSec2
+    {
+        border-left: 0px;
+        flex: 100;
+    }
+    .flexContainerSec > div {
+        flex: 320px;
+    }
+    .contSection{
+        border: 20px #FEFF03 solid;
+        flex-direction:column;
+    }
+
+  }
+@media (max-width: 767px) { /* ---- MOVIL ----- */
+    /* HEADER */
+    .flexContainerNav{
+        flex-direction:column;
+        border-bottom: 10px solid #000;
+    }
+    .flexContainerNav > div{
+        flex-direction:column;
+    }
+    .flexContainerNavInf{
+        border-top: 10px solid #000;
+    }
+    /* SECTION */
+    .flexContainerSec {
+        background-color: #09506F
+    }
+    .flexContainerSec > div {
+        flex: 100%;
+        background-color: #62959C;
+    }
+    .flexContainerSec > div.grande{
+        background-color: #A3DDCB;
+    }
+    .flexContainerSec2{
+        background-color: #FD7B54;
+    }
+    .flexContainerSec2 > div{
+        background-color: #FDB36B;
+    }
+    /* FOOTER */
+    .flexContainerFo > div {
+        background-color: #FDC764;
+    }
+  }
